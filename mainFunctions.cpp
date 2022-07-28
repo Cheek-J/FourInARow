@@ -20,18 +20,6 @@ void printBlankBoard(){
         }
      }std::cout<<"The numbers correspond to the grid location.\n";
 }
-void printActiveBoard(Board boardIn){
-    printBlankBoard();
-
-    std::cout<<"\n\nThis is the current Board:\n";
-     for(int i=0;i<16;i++){
-        std::cout<<"|"<<boardIn.getPositions()[i];
-        std::cout<<" ";
-        if(i%4==3){
-            std::cout<<"|\n";
-        }
-     }
-}
 void writeTheBoard(Board boardIn) {
     std::cout<<"\nThis is the current Board:\n";
      for(int i=0;i<16;i++){
