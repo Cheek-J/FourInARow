@@ -125,7 +125,6 @@ char Board::checkDiag() {
   return winner;  
 }
 char Board::determineWinner(){
-
     char winner ='z';
    
         winner=checkRows();

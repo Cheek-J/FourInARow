@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "mainClasses.cpp"
+
 void getName(std::string &user1, std::string &user2){
     std::cout<<"Player 'x' enter name: ";
     std::cin>>user1;
