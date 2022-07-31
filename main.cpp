@@ -19,7 +19,7 @@
     If the grid is filled (each player gets 8 turns) and there is not a row, column, diagonal
     with 4 of the same symbol, the game is tied. Declare a tie game/
     */
-   
+
   #include "mainFunctions.cpp"
 
   int main() {
@@ -30,14 +30,14 @@
 
    getName(namex,nameo);
    while(turns <8) {
-      printBlankBoard();
-      writeTheBoard(test);
+      printBlankBoard();//print reference board
+      writeTheBoard(test);//print gameboard
 
-      printUserPrompt(namex,'x');
-      checkResponse(test,'x');
-      gameWinner=test.determineWinner();
+      printUserPrompt(namex,'x');//get user input
+      checkResponse(test,'x');//validate user input
+      gameWinner=test.determineWinner();//run determineWinner() see if turn declared user a winner
 
-      if(gameWinner != 'z') {
+      if(gameWinner != 'z') { 
          writeTheBoard(test);
          printGameWinner(test, namex,nameo);
          break;
